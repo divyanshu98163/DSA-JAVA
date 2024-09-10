@@ -160,7 +160,7 @@ public class LinkedList {
     }
 
 
-    // revarse a linked list 
+    // reverse a linked list 
 
     public void revrse(){
         node prev =null;

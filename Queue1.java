@@ -4,6 +4,7 @@ public class Queue1 {
         static int arr[];
         static int size;
         static int rear;
+        
 
         Queue(int n) {
             arr = new int[n];

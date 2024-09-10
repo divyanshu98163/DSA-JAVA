@@ -17,6 +17,22 @@ public class BinaryTree1 {
         int rh = Height(root.right);
         return Math.max(lh, rh)+1;
     }
+    public static int count(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftCount = count(root.left);
+        int rightCount = count(root.right);
+        return leftCount + rightCount+1;
+    }
+    public static int sum(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftCount = sum(root.left);
+        int rightCount = sum(root.right);
+        return leftCount + rightCount+1;
+    }
 
     public static void main(String[] args) {
         
@@ -28,6 +44,10 @@ public class BinaryTree1 {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
 
-        System.out.println(Height(root));
+        System.out.println("Height  "+Height(root));
+
+        System.out.println("count "+count(root));
+
+        System.out.println("sum "+sum(root));
     }
 }
