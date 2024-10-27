@@ -37,11 +37,11 @@ public class Graph {
         
 
         // 3 vertix
-        graph[2].add(new Edge(3, 1, 3));
-        graph[2].add(new Edge(3, 2, 1));
+        graph[3].add(new Edge(3, 1, 3));
+        graph[3].add(new Edge(3, 2, 1));
 
         // 4 vertix
-        graph[2].add(new Edge(4, 2, 2));
+        graph[4].add(new Edge(4, 2, 2));
 
 
         // 2's neighbors
